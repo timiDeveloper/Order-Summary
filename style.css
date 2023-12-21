@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Harmattan:wght@400;500;600;700&family=Inter:wght@100;200;300;500&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+    --saturatedblue: hsla(224, 100%, 94%);
+}
+.bg{
+    position: absolute;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 375px;
+    width: 100%;
+    top: 0;
+    
+
+
+}
+
+body{
+    background-color: var(--saturatedblue);
+    display: grid;
+    place-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.card{
+    background-color: hsl(225, 100%, 98%);
+    margin-top: 30px;
+    border-radius: 22px;
+    z-index: 22222;
+}
+.card-img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 380px;
+}
+.card h3{
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+.card p{
+    text-align: center;
+    font-size: 12px;
+    color: hsl(224, 23%, 75%);
+}
+.d-block{
+    display: block;
+}
+.plan{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    gap: 40px;
+    background-color: hsl(224, 20%, 85%);
+    margin: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius: 6px;
+}
+.plan img{
+    height: 35px;
+    position: relative;
+    top: 10px;
+}
+.plan p{
+    font-weight: bolder;
+    color: hsl(223, 47%, 23%);
+    position: relative;
+    right: 25px;
+
+}
+.d-block-price{
+    color: hsl(224, 23%, 75%);
+    display: block;
+}
+.plan a{
+    color: hsl(245, 75%, 52%);
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    top: 18px;
+}
+.button1{
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px 20px;
+    width: 78%;
+    margin: 10px 42px;
+    border: none;
+    border-radius: 5px;
+    color: hsl(225, 100%, 98%);
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 10px 0px 50px hsl(225, 55%, 85%);
+
+}
+.payment-btn{
+    display :grid;
+    place-items: center;
+}
+.cancel-btn{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+   
+.button2{
+    background: none;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 10px;
+    font-weight: 900;
+    position: relative;
+    bottom: 10px;
+    
+
+}
+
+@media(max-width:600px){
+    .body{
+        margin-right: 5rem;
+    }
+    .button1{
+        width: 70%
+    }
+    .plan{
+        margin-left: 20px;
+    margin-right: 20px;
+    width:65%;
+    position: relative;
+    left: 30px;
+    }
+    .card-img{
+        width: 350px;
+    }
+    .card{
+        position: relative;
+        right:2px;
+    }
+}
